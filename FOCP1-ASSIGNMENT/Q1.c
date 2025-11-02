@@ -22,4 +22,4 @@ if((int)result==num)
 else
  printf("%d is not an Armstrong number.\n", num);
 return 0;
-
+}

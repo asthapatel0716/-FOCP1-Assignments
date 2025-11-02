@@ -1,25 +1,15 @@
 #include <stdio.h>
-int main() 
+int main()
 {
-    int n, i, position = -1;
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &n);
-    int arr[n];
-    printf("Enter %d scores:\n", n);
-    for (i = 0; i < n; i++)
-     {
-        scanf("%d", &arr[i]);
-     }
-    for (i = 0; i < n; i++) 
+    int i = 0,n=0;
+    int arr[15] = {1, 12, 14, 54, 23, 22, 27, 86, 67, 96, 99, 9, 13, 76, 51};
+    for (int i = 0; i < 15; i++)
     {
-        if (arr[i] == 99) {
-            position = i;
-            break; 
+        n++;
+        if(arr[i] == 99)
+        {
+            printf("99 is at %d position in the array", n);
         }
     }
-    if (position != -1)
-        printf("The first occurrence of score 99 is at position %d.\n", position + 1);
-    else
-        printf("Score 99 not found in the array.\n");
-    return 0;
+    return 0;
 }
